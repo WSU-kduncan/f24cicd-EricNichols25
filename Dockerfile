@@ -1,14 +1,14 @@
-FROM node:16
+FROM node:18-alpine
 
 WORKDIR /usr/src/app
 
-COPY angular-site/package*.json ./
+COPY package*.json ./
 
 RUN npm install
 
 COPY angular-site/ .
 
-RUN npm run build --configuration production
+RUN npm run build -- --configuration production
 
 EXPOSE 4200
 
