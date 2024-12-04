@@ -1,15 +1,11 @@
-FROM node:18-alpine
+FROM node:18-bullseye
 
 WORKDIR /usr/src/app
 
-COPY package*.json ./
+COPY ..
 
-RUN npm install
+RUN npm install -g @angular/cli
 
-COPY angular-site/ .
+WORKDIR /usr/src/app/angular-site/wsu-hw-ng-main
 
-RUN npm run build -- --configuration production
-
-EXPOSE 4200
-
-CMD ["npm", "start"]
+CMD ["ng", "serve", "--host", "0.0.0.0"]
