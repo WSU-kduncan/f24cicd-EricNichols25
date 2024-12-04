@@ -2,10 +2,12 @@ FROM node:18-bullseye
 
 WORKDIR /usr/src/app
 
-COPY ./angular-site/.
+
+COPY ./angular-site ./angular-site
 
 RUN npm install -g @angular/cli
-RUN npm install
+
+WORKDIR /usr/src/app/angular-site/wsu-hw-ng-main
 
 EXPOSE 4200
 
