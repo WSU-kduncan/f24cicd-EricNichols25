@@ -204,7 +204,7 @@ sudo systemctl enable webhook.service
 
 Here is a diagram showcasing the flow of the project:
 
-![Diagram](diagram.png)
+![Diagram](Diagram.png)
 
 #### Part 4 Demonstration
 
