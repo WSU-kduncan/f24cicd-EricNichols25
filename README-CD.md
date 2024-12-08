@@ -86,7 +86,7 @@ The purpose of the bash script is to pull the latest Docker image from Docker Hu
 
 ### Link to deploy script
 
-- **Link**: [deploy-script.sh](https://github.com/EricNichols25/f24cicd-EricNichols25/blob/main/Deployment/deploy-script.sh)
+- **Link**: [deploy-script.sh](https://github.com/WSU-kduncan/f24cicd-EricNichols25/blob/main/Deployment/deploy.sh)
 
 #### Purpose of Installing adnanh's Webhook
 
@@ -119,7 +119,7 @@ To create the Webhook Configuration file, please follow these steps:
 ```
 
 - **Location on filesystem**: /home/ubuntu/deployment
-- **Link to file**: [hooks.json](https://github.com/EricNichols25/f24cicd-EricNichols25/blob/main/Deployment/hooks.json)
+- **Link to file**: [hooks.json](https://github.com/WSU-kduncan/f24cicd-EricNichols25/blob/main/Deployment/hooks.json)
 
 ### How to Start the Webhook Listener (Without Service)
 
@@ -181,7 +181,7 @@ User=ubuntu
 WantedBy=multi-user.target
 ```
 
-- **Link to service file**: [webhooks.service.txt](https://github.com/EricNichols25/f24cicd-EricNichols25/blob/main/Deployment/webhooks.service.txt)
+- **Link to service file**: [webhooks.service.txt](https://github.com/WSU-kduncan/f24cicd-EricNichols25/blob/main/Deployment/webhooks.service.txt)
 
 ### Reloading the Service
 
