@@ -1,0 +1,19 @@
+[
+  {
+    "id": "deploy_hook",
+    "execute-command": "/home/ubuntu/webhook/deploy.sh",
+    "command-working-directory": "/home/ubuntu/hooks",
+    "response-message": "Deployment script executed successfully",
+    "trigger-rule": {
+      "and": [
+        {
+          "match": {
+            "type": "payload-hmac-sha1",
+            "secret": "your-webhook-secret",
+            "parameter": "X-Hub-Signature"
+          }
+        }
+      ]
+    }
+  }
+]
